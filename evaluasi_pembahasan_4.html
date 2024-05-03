@@ -115,10 +115,6 @@ trivSetupPage();
 var arVariables = [];
 
 VarTrivSelCap = new Variable( 'VarTrivSelCap', 'none', 0, 0, null, null, 'media_untuk_skripsi', true )
-VarPageInTitle = new Variable( 'VarPageInTitle', null, 0, 0, null, null, 'media_untuk_skripsi' )
-VarPageInTitle.set( '39' )
-VarPagesInTitle = new Variable( 'VarPagesInTitle', null, 0, 0, null, null, 'media_untuk_skripsi' )
-VarPagesInTitle.set( '46' )
 
 onload = init
 if( is.webkit && !is.iOSSafari )
@@ -130,14 +126,12 @@ function init() {
   findWH()
   if( is.min ){
     trivPageTracking.InitPageTracking();
-    PreloadResources(new Array(button90,button84,button78,button71,button64,button49353,og94,image96,image98,image307,image324,image290,text54648,text54647,text49348,shape49347))
+    PreloadResources(new Array(button90,button84,button78,button49353,og94,image96,image98,image307,image324,image290,text71651,text71800,text49348,shape49347))
     pageLayer = new ObjLayer(GetCurrentPageID());
     pageLayer.show(true);
     button90.init()
     button84.init()
     button78.init()
-    button71.init()
-    button64.init()
     button49353.init()
     og94.init()
     image96.init()
@@ -145,15 +139,13 @@ function init() {
     image307.init()
     image324.init()
     image290.init()
-    text54648.init()
-    text54647.init()
+    text71651.init()
+    text71800.init()
     text49348.init()
     shape49347.init()
     button90.activate()
     button84.activate()
     button78.activate()
-    button71.activate()
-    button64.activate()
     button49353.activate()
     og94.activate()
     image96.activate()
@@ -161,8 +153,8 @@ function init() {
     image307.activate()
     image324.activate()
     image290.activate()
-    text54648.activate()
-    text54647.activate()
+    text71651.activate()
+    text71800.activate()
     text49348.activate()
     shape49347.activate()
     window.scrollTo(0,1);
@@ -190,7 +182,6 @@ function init() {
 function loadActions(){
     if((window.bPageLoaded && window.bLoadedVariables && getDisplayWindow().pagePlayer &&
 	getDisplayWindow().pagePlayer.arLoadedPages && getDisplayWindow().pagePlayer.arLoadedPages.length == 1) || (window.bPageLoaded && window.bLoadedVariables && !isSinglePagePlayerAvail() )){
-      action72();action65();
        postPageShowAction();
     }
     else
@@ -306,56 +297,6 @@ function button78onUp() {
   action79();
 }
 
-function action72else(fn){
-    
-    if(fn && typeof(fn) == 'string' ) eval(fn);
-    else if(fn && typeof(fn) == 'function' ) fn();
-}
-
-function action72(fn){
-    if(VarPageInTitle.equals('1'))
-    {button71.setDisabled(true);
-
-    }else{ action72else();}
-    if(fn && typeof(fn) == 'string' ) eval(fn);
-    else if(fn && typeof(fn) == 'function' ) fn();
-}
-
-function action73(fn){
-    trivExitPage('evaluasi_pembahasan_3.html',false); 
-    if(fn && typeof(fn) == 'string' ) eval(fn);
-    else if(fn && typeof(fn) == 'function' ) fn();
-}
-
-function button71onUp() {
-  action73();
-}
-
-function action65else(fn){
-    
-    if(fn && typeof(fn) == 'string' ) eval(fn);
-    else if(fn && typeof(fn) == 'function' ) fn();
-}
-
-function action65(fn){
-    if(VarPageInTitle.equals(VarPagesInTitle.getValue()))
-    {button64.setDisabled(true);
-
-    }else{ action65else();}
-    if(fn && typeof(fn) == 'string' ) eval(fn);
-    else if(fn && typeof(fn) == 'function' ) fn();
-}
-
-function action66(fn){
-    trivExitPage('evaluasi_pembahasan_5.html',true); 
-    if(fn && typeof(fn) == 'string' ) eval(fn);
-    else if(fn && typeof(fn) == 'function' ) fn();
-}
-
-function button64onUp() {
-  action66();
-}
-
 function action49354(fn){
     trivExitPage('evaluasi_pembahasan_5.html',true); 
     if(fn && typeof(fn) == 'string' ) eval(fn);
@@ -367,7 +308,7 @@ function button49353onUp() {
 }
 
 if( is.min ){
-button90 = new ObjButton('button90', 'Home',326,13,40.000000,35.000000,1,27,'div','',1,0)
+button90 = new ObjButton('button90', 'Home',326,13,40.000000,35.000000,1,25,'div','',1,0)
 button90.setUseSvgFile(1)
 button90.setFillStyle(4)
 button90.setUniqueFillID('evaluasi_pembahasan_4_button90')
@@ -388,7 +329,7 @@ button90.hasOnUp = true
 button90.capture=4
 button90.build()
 
-button84 = new ObjButton('button84', 'Help',377,13,40.000000,35.000000,1,28,'div','',0,0)
+button84 = new ObjButton('button84', 'Help',377,13,40.000000,35.000000,1,26,'div','',0,0)
 button84.setUseSvgFile(1)
 button84.setFillStyle(4)
 button84.setUniqueFillID('evaluasi_pembahasan_4_button84')
@@ -409,7 +350,7 @@ button84.hasOnUp = true
 button84.capture=4
 button84.build()
 
-button78 = new ObjButton('button78', 'Exit',428,13,40.000000,35.000000,1,29,'div','',1,0)
+button78 = new ObjButton('button78', 'Exit',428,13,40.000000,35.000000,1,27,'div','',1,0)
 button78.setUseSvgFile(1)
 button78.setFillStyle(4)
 button78.setUniqueFillID('evaluasi_pembahasan_4_button78')
@@ -430,49 +371,7 @@ button78.hasOnUp = true
 button78.capture=4
 button78.build()
 
-button71 = new ObjButton('button71', 'Back',372,724,41.000000,36.000000,1,30,'div','',1,1)
-button71.setUseSvgFile(1)
-button71.setFillStyle(4)
-button71.setUniqueFillID('evaluasi_pembahasan_4_button71')
-button71.initRotateAngle(0,0,0,-0.000000,-0.000000,40,35)
-button71.initHasShadow(0)
-button71.initHasReflection(0)
-button71.setImages('images/button71.png', 'images/button71_down.png', 'images/button71_over.png','images/button71_disabled.png');
-button71.setStateOpacity( 1.000000, 1.000000, 1.000000, 0.600000 );
-button71.addIe8Attr(372.000000, 724.000000, 41.000000, 36.000000, 0, 0)
-button71.addOpacity(100)
-button71.initImageMap('0,0,40,0,40,35,0,35,0,0','M 0.000000 0.000000 L 40.000000 0.000000 L 40.000000 35.000000 L 0.000000 35.000000 L 0.000000 0.000000 z')
-button71.setFills('                <pattern id="Picture_evaluasi_pembahasan_4_button71" x="0" y="0" width="41.000000" height="36.000000" patternUnits="userSpaceOnUse">                <image xlink:href="images/back_norm.png" x="0" y="0" width="41.000000" height="36.000000"  preserveAspectRatio="none"/>           </pattern>       ','                <pattern id="Picture_evaluasi_pembahasan_4_button71_over" x="0" y="0" width="41.000000" height="36.000000" patternUnits="userSpaceOnUse">                <image xlink:href="images/back_norm.png" x="0" y="0" width="41.000000" height="36.000000"  preserveAspectRatio="none"/>           </pattern>       ','                <pattern id="Picture_evaluasi_pembahasan_4_button71_down" x="0" y="0" width="41.000000" height="36.000000" patternUnits="userSpaceOnUse">                <image xlink:href="images/back_norm.png" x="0" y="0" width="41.000000" height="36.000000"  preserveAspectRatio="none"/>           </pattern>       ','                <pattern id="Picture_evaluasi_pembahasan_4_button71_disabled" x="0" y="0" width="41.000000" height="36.000000" patternUnits="userSpaceOnUse">                <image xlink:href="images/back_norm.png" x="0" y="0" width="41.000000" height="36.000000"  preserveAspectRatio="none"/>           </pattern>       ','fill:url(#Picture_evaluasi_pembahasan_4_button71);"','fill:url(#Picture_evaluasi_pembahasan_4_button71_over);"','fill:url(#Picture_evaluasi_pembahasan_4_button71_down);"','fill:url(#Picture_evaluasi_pembahasan_4_button71_disabled);"')
-button71.setTextVal('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAAkCAYAAAAU/hMoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAcSURBVFhH7cEBAQAAAIIg/6+uIUAAAAAAAMDVABc0AAFVOtvdAAAAAElFTkSuQmCC' , 'fill:url(#Text_evaluasi_pembahasan_4_button71)', 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAAkCAYAAAAU/hMoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAcSURBVFhH7cEBAQAAAIIg/6+uIUAAAAAAAMDVABc0AAFVOtvdAAAAAElFTkSuQmCC', 'fill:url(#Text_evaluasi_pembahasan_4_button71_over)', 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAAkCAYAAAAU/hMoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAcSURBVFhH7cEBAQAAAIIg/6+uIUAAAAAAAMDVABc0AAFVOtvdAAAAAElFTkSuQmCC', 'fill:url(#Text_evaluasi_pembahasan_4_button71_down)', 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAAkCAYAAAAU/hMoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAcSURBVFhH7cEBAQAAAIIg/6+uIUAAAAAAAMDVABc0AAFVOtvdAAAAAElFTkSuQmCC', 'fill:url(#Text_evaluasi_pembahasan_4_button71_disabled)')
-button71.setBase64Images( 'images/back_norm.png' , 'images/back_norm.png' , 'images/back_norm.png' , 'images/back_norm.png' )
-button71.initLineWeight('0')
-button71.onUp = button71onUp
-button71.hasOnUp = true
-button71.capture=4
-button71.build()
-
-button64 = new ObjButton('button64', 'Next',425,724,40.000000,36.000000,1,31,'div','',1,1)
-button64.setUseSvgFile(1)
-button64.setFillStyle(4)
-button64.setUniqueFillID('evaluasi_pembahasan_4_button64')
-button64.initRotateAngle(0,0,0,-0.000000,-0.000000,39,35)
-button64.initHasShadow(0)
-button64.initHasReflection(0)
-button64.setImages('images/button64.png', 'images/button64_down.png', 'images/button64_over.png','images/button64_disabled.png');
-button64.setStateOpacity( 1.000000, 1.000000, 1.000000, 0.600000 );
-button64.addIe8Attr(425.000000, 724.000000, 40.000000, 36.000000, 0, 0)
-button64.addOpacity(100)
-button64.initImageMap('0,0,39,0,39,35,0,35,0,0','M 0.000000 0.000000 L 39.000000 0.000000 L 39.000000 35.000000 L 0.000000 35.000000 L 0.000000 0.000000 z')
-button64.setFills('                <pattern id="Picture_evaluasi_pembahasan_4_button64" x="0" y="0" width="40.000000" height="36.000000" patternUnits="userSpaceOnUse">                <image xlink:href="images/next_norm.png" x="0" y="0" width="40.000000" height="36.000000"  preserveAspectRatio="none"/>           </pattern>       ','                <pattern id="Picture_evaluasi_pembahasan_4_button64_over" x="0" y="0" width="40.000000" height="36.000000" patternUnits="userSpaceOnUse">                <image xlink:href="images/next_norm.png" x="0" y="0" width="40.000000" height="36.000000"  preserveAspectRatio="none"/>           </pattern>       ','                <pattern id="Picture_evaluasi_pembahasan_4_button64_down" x="0" y="0" width="40.000000" height="36.000000" patternUnits="userSpaceOnUse">                <image xlink:href="images/next_norm.png" x="0" y="0" width="40.000000" height="36.000000"  preserveAspectRatio="none"/>           </pattern>       ','                <pattern id="Picture_evaluasi_pembahasan_4_button64_disabled" x="0" y="0" width="40.000000" height="36.000000" patternUnits="userSpaceOnUse">                <image xlink:href="images/next_norm.png" x="0" y="0" width="40.000000" height="36.000000"  preserveAspectRatio="none"/>           </pattern>       ','fill:url(#Picture_evaluasi_pembahasan_4_button64);"','fill:url(#Picture_evaluasi_pembahasan_4_button64_over);"','fill:url(#Picture_evaluasi_pembahasan_4_button64_down);"','fill:url(#Picture_evaluasi_pembahasan_4_button64_disabled);"')
-button64.setTextVal('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAkCAYAAAD7PHgWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAdSURBVFhH7cExAQAAAMKg9U9tDB8gAAAAAAC4qAEWpAABaxbsPwAAAABJRU5ErkJggg==' , 'fill:url(#Text_evaluasi_pembahasan_4_button64)', 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAkCAYAAAD7PHgWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAdSURBVFhH7cExAQAAAMKg9U9tDB8gAAAAAAC4qAEWpAABaxbsPwAAAABJRU5ErkJggg==', 'fill:url(#Text_evaluasi_pembahasan_4_button64_over)', 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAkCAYAAAD7PHgWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAdSURBVFhH7cExAQAAAMKg9U9tDB8gAAAAAAC4qAEWpAABaxbsPwAAAABJRU5ErkJggg==', 'fill:url(#Text_evaluasi_pembahasan_4_button64_down)', 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAkCAYAAAD7PHgWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAdSURBVFhH7cExAQAAAMKg9U9tDB8gAAAAAAC4qAEWpAABaxbsPwAAAABJRU5ErkJggg==', 'fill:url(#Text_evaluasi_pembahasan_4_button64_disabled)')
-button64.setBase64Images( 'images/next_norm.png' , 'images/next_norm.png' , 'images/next_norm.png' , 'images/next_norm.png' )
-button64.initLineWeight('0')
-button64.onUp = button64onUp
-button64.hasOnUp = true
-button64.capture=4
-button64.build()
-
-button49353 = new ObjButton('button49353', 'Next',184,612,109.000000,43.000000,1,32,'div','',1,0)
+button49353 = new ObjButton('button49353', 'Next',184,612,109.000000,43.000000,1,28,'div','',1,0)
 button49353.setUseSvgFile(1)
 button49353.setFillStyle(0)
 button49353.setUniqueFillID('evaluasi_pembahasan_4_button49353')
@@ -499,7 +398,7 @@ og94.addChild('image96')
 og94.addChild('image98')
 og94.build()
 
-image96 = new ObjImage('image96','images/header.png','',0,0,480,220,1,7,'div',null, 0 )
+image96 = new ObjImage('image96','images/header.png','',0,0,480,220,1,5,'div',null, 0 )
 image96.initRotateAngle(0,0,0,0,0,0,0)
 image96.initHasShadow(0)
 image96.initHasReflection(0)
@@ -509,7 +408,7 @@ image96.addBorder(0)
 image96.addOpacity(100)
 image96.build()
 
-image98 = new ObjImage('image98','images/footer.png','',0,222,480,542,1,8,'div',null, 1 )
+image98 = new ObjImage('image98','images/footer.png','',0,222,480,542,1,6,'div',null, 1 )
 image98.initRotateAngle(0,0,0,0,0,0,0)
 image98.initHasShadow(0)
 image98.initHasReflection(0)
@@ -519,7 +418,7 @@ image98.addBorder(0)
 image98.addOpacity(100)
 image98.build()
 
-image307 = new ObjImage('image307','images/logo_pkm-removebg-preview_1_.png','logo_pkm-removebg-preview (1)',52,0,34,39,1,9,'div',null, 0 )
+image307 = new ObjImage('image307','images/logo_pkm-removebg-preview_1_.png','logo_pkm-removebg-preview (1)',52,0,34,39,1,7,'div',null, 0 )
 image307.initRotateAngle(0,0,0,0,0,0,0)
 image307.initHasShadow(0)
 image307.initHasReflection(0)
@@ -529,7 +428,7 @@ image307.addBorder(0)
 image307.addOpacity(100)
 image307.build()
 
-image324 = new ObjImage('image324','images/img-20231113-wa0067-removebg-preview.png','IMG-20231113-WA0067-removebg-preview',90,4,64,36,1,10,'div',null, 0 )
+image324 = new ObjImage('image324','images/img-20231113-wa0067-removebg-preview.png','IMG-20231113-WA0067-removebg-preview',90,4,64,36,1,8,'div',null, 0 )
 image324.initRotateAngle(0,0,0,0,0,0,0)
 image324.initHasShadow(0)
 image324.initHasReflection(0)
@@ -539,7 +438,7 @@ image324.addBorder(0)
 image324.addOpacity(100)
 image324.build()
 
-image290 = new ObjImage('image290','images/img-20231007-wa0096-removebg-preview.png','IMG-20231007-WA0096-removebg-preview',4,1,42,38,1,11,'div',null, 0 )
+image290 = new ObjImage('image290','images/img-20231007-wa0096-removebg-preview.png','IMG-20231007-WA0096-removebg-preview',4,1,42,38,1,9,'div',null, 0 )
 image290.initRotateAngle(0,0,0,0,0,0,0)
 image290.initHasShadow(0)
 image290.initHasReflection(0)
@@ -549,42 +448,42 @@ image290.addBorder(0)
 image290.addOpacity(100)
 image290.build()
 
-text54648 = new ObjText('text54648',null,22,88,198,19,1,12,null,'div',null,0 )
-text54648.initSLine(1)
-text54648.initHasBullet(0)
-text54648.initRotateAngle(0,0,0)
-text54648.initHasOuterShadow(0)
-text54648.initHasTextShadow(0)
-text54648.initHasBorder(0)
-text54648.initHasOutline(0)
-text54648.initHasMargin(0)
-text54648.addIe8Attr(22, 88, 198, 19, 0, 0)
-text54648.addOpacity(100)
-text54648.arrCSSStyles = new Array();
-text54648.arrCSSStyles.push('span.text54648Font1 { font-size:16px; font-family:"Times New Roman", serif; color:#000000; background-color:#93c47d; font-style:italic;}');
-text54648.arrCSSStyles.push('span.text54648Font2 { font-size:16px; font-family:"Times New Roman", serif; color:#000000; background-color:#93c47d;}');
-text54648.arrCSSStyles.push('span.text54648Font3 { font-size:15px; font-family:"Arial", sans-serif; color:#010101;}');
-text54648.addInnerText('<div id=\"text54648\"><a id=\"text54648anc\" style=\"display:block;height:0px;width:0px;\"></a>\n<p  style=\"margin-left:0px;text-indent:0px;margin-top:0px;margin-bottom:0px;text-align:left;\" >\n<span class=\"text54648Font1\"  >e-mail </span ><span class=\"text54648Font2\"  >: halizaulfa8@gmail.com </span ><span class=\"text54648Font3\" style=\"background-color:transparent\" >\n</span ></p >\n</div>\n');
-text54648.build()
+text71651 = new ObjText('text71651',null,18,91,199,15,1,10,null,'div',null,0 )
+text71651.initSLine(0)
+text71651.initHasBullet(0)
+text71651.initRotateAngle(0,0,0)
+text71651.initHasOuterShadow(0)
+text71651.initHasTextShadow(0)
+text71651.initHasBorder(0)
+text71651.initHasOutline(0)
+text71651.initHasMargin(0)
+text71651.addIe8Attr(18, 91, 199, 15, 0, 0)
+text71651.addOpacity(100)
+text71651.arrCSSStyles = new Array();
+text71651.arrCSSStyles.push('span.text71651Font1 { font-size:13px; font-family:"Times New Roman", serif; color:#010101; background-color:#76a5af; font-style:italic;}');
+text71651.arrCSSStyles.push('span.text71651Font2 { font-size:13px; font-family:"Times New Roman", serif; color:#010101; background-color:#76a5af;}');
+text71651.arrCSSStyles.push('span.text71651Font3 { font-size:11px; font-family:"Times New Roman", serif; color:#010101; background-color:#76a5af;}');
+text71651.addInnerText('<div id=\"text71651\"><a id=\"text71651anc\" style=\"display:block;height:0px;width:0px;\"></a>\n<p  style=\"margin-left:0px;text-indent:0px;margin-top:0px;margin-bottom:0px;text-align:center;\" >\n<span class=\"text71651Font1\"  >e-mail</span ><span class=\"text71651Font2\"  > : halizaulfa8@gmail.com</span ><span class=\"text71651Font3\" style=\"background-color:transparent\" >\n</span ></p >\n</div>\n');
+text71651.build()
 
-text54647 = new ObjText('text54647',null,234,88,206,19,1,13,null,'div',null,0 )
-text54647.initSLine(1)
-text54647.initHasBullet(0)
-text54647.initRotateAngle(0,0,0)
-text54647.initHasOuterShadow(0)
-text54647.initHasTextShadow(0)
-text54647.initHasBorder(0)
-text54647.initHasOutline(0)
-text54647.initHasMargin(0)
-text54647.addIe8Attr(234, 88, 206, 19, 0, 0)
-text54647.addOpacity(100)
-text54647.arrCSSStyles = new Array();
-text54647.arrCSSStyles.push('span.text54647Font1 { font-size:16px; font-family:"Times New Roman", serif; color:#010101; background-color:#93c47d;}');
-text54647.arrCSSStyles.push('span.text54647Font2 { font-size:15px; font-family:"Arial", sans-serif; color:#010101;}');
-text54647.addInnerText('<div id=\"text54647\"><a id=\"text54647anc\" style=\"display:block;height:0px;width:0px;\"></a>\n<p  style=\"margin-left:0px;text-indent:0px;margin-top:0px;margin-bottom:0px;text-align:left;\" >\n<span class=\"text54647Font1\"  >Prodi : pendidikan kimia, UNIKS</span ><span class=\"text54647Font2\" style=\"background-color:transparent\" >\n</span ></p >\n</div>\n');
-text54647.build()
+text71800 = new ObjText('text71800',null,234,90,206,14,1,11,null,'div',null,0 )
+text71800.initSLine(0)
+text71800.initHasBullet(0)
+text71800.initRotateAngle(0,0,0)
+text71800.initHasOuterShadow(0)
+text71800.initHasTextShadow(0)
+text71800.initHasBorder(0)
+text71800.initHasOutline(0)
+text71800.initHasMargin(0)
+text71800.addIe8Attr(234, 90, 206, 14, 0, 0)
+text71800.addOpacity(100)
+text71800.arrCSSStyles = new Array();
+text71800.arrCSSStyles.push('span.text71800Font1 { font-size:13px; font-family:"Times New Roman", serif; color:#010101; background-color:#76a5af;}');
+text71800.arrCSSStyles.push('span.text71800Font2 { font-size:15px; font-family:"Arial", sans-serif; color:#010101; background-color:#76a5af;}');
+text71800.addInnerText('<div id=\"text71800\"><a id=\"text71800anc\" style=\"display:block;height:0px;width:0px;\"></a>\n<p  style=\"margin-left:0px;text-indent:0px;margin-top:0px;margin-bottom:0px;text-align:center;\" >\n<span class=\"text71800Font1\"  >Prodi : Pendidikan kimia, UNIKS</span ><span class=\"text71800Font2\" style=\"background-color:transparent\" >\n</span ></p >\n</div>\n');
+text71800.build()
 
-text49348 = new ObjText('text49348',null,86,181,351,409,1,14,-1,'div',null,0 )
+text49348 = new ObjText('text49348',null,86,181,351,409,1,12,-1,'div',null,0 )
 text49348.initSLine(0)
 text49348.initHasBullet(0)
 text49348.initRotateAngle(0,0,0)
@@ -605,7 +504,7 @@ text49348.arrCSSStyles.push('li.text49348Font4 { font-size:24px; font-family:"Ti
 text49348.addInnerText('<div id=\"text49348\" style=\"overflow-y:auto;overflow-x:hidden;\"><a id=\"text49348anc\" style=\"display:block;height:0px;width:0px;\"></a>\n<p  legLH=\"1.752\" style=\"margin-left:0px;text-indent:0px;line-height:1.752;margin-top:0px;margin-bottom:0px;text-align:justify;\" >\n<span class=\"text49348Font2\" style=\"position:relative;top:-5px;\" >Suatu unsur mempunyai nomor atom 35 dan jumlah neutron sebanyak 45. Dapat disimpulkan bahwa unsur tersebut mempunyai\n</span ></p >\n<ol  start=\"1\" style=\"list-style-position:outside;text-align:justify;\" >\n<li  class=\"text49348Font2\" style=\"line-height:1.752;position:relative;padding-left:10px;list-style-type:lower-alpha;margin-left:31px;margin-top:0px;margin-bottom:0px;\"><span class=\"text49348Font2\"  >45 elektron\n</span ></li >\n<li  class=\"text49348Font2\" style=\"line-height:1.752;position:relative;padding-left:10px;list-style-type:lower-alpha;margin-left:31px;margin-top:0px;margin-bottom:0px;\"><span class=\"text49348Font2\"  >80 elektron\n</span ></li >\n<li  class=\"text49348Font3\" style=\"line-height:1.752;position:relative;padding-left:10px;list-style-type:lower-alpha;margin-left:31px;margin-top:0px;margin-bottom:0px;\"><span class=\"text49348Font3\"  >Nomor massa 80\n</span ></li >\n<li  class=\"text49348Font2\" style=\"line-height:1.752;position:relative;padding-left:10px;list-style-type:lower-alpha;margin-left:31px;margin-top:0px;margin-bottom:0px;\"><span class=\"text49348Font2\"  >Nomor massa 125\n</span ></li >\n</ol >\n<p  legLH=\"1.752\" style=\"margin-left:0px;text-indent:0px;line-height:1.752;margin-top:0px;margin-bottom:0px;text-align:justify;\" >\n<span class=\"text49348Font2\" style=\"position:relative;top:-5px;\" >Pembahasan :\n</span ></p >\n<p  legLH=\"1.168\" style=\"margin-left:0px;text-indent:0px;line-height:1.168;margin-top:0px;margin-bottom:13px;text-align:justify;\" >\n<span class=\"text49348Font4\"  >Nomor atom &nbsp;&nbsp;= jumlah proton = 35\n</span ></p >\n<p  legLH=\"1.168\" style=\"margin-left:0px;text-indent:0px;line-height:1.168;margin-top:0px;margin-bottom:13px;text-align:justify;\" >\n<span class=\"text49348Font4\"  >Nomor massa &nbsp;&nbsp;= proton + neutron\n</span ></p >\n<p  legLH=\"1.168\" style=\"margin-left:48px;text-indent:48px;line-height:1.168;margin-top:0px;margin-bottom:13px;text-align:justify;\" >\n<span class=\"text49348Font4\"  >&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;= 35 + 45\n</span ></p >\n<p  style=\"margin-left:48px;text-indent:48px;margin-top:0px;margin-bottom:13px;text-align:justify;\" >\n<span class=\"text49348Font4\"  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= 80\n</span ></p >\n</div>\n');
 text49348.build()
 
-shape49347 = new ObjImage('shape49347','images/shape49347.png','4',30,175,46.000000,44.000000,1,15,'div','',0 )
+shape49347 = new ObjImage('shape49347','images/shape49347.png','4',30,175,46.000000,44.000000,1,13,'div','',0 )
 shape49347.initRotateAngle(0,0,0,-1.000000,-1.000000,44,42)
 shape49347.initHasShadow(0)
 shape49347.initHasReflection(0)
@@ -622,8 +521,6 @@ shape49347.build()
 arObjs.push(button90);
 arObjs.push(button84);
 arObjs.push(button78);
-arObjs.push(button71);
-arObjs.push(button64);
 arObjs.push(button49353);
 arObjs.push(og94);
 arObjs.push(image96);
@@ -631,8 +528,8 @@ arObjs.push(image98);
 arObjs.push(image307);
 arObjs.push(image324);
 arObjs.push(image290);
-arObjs.push(text54648);
-arObjs.push(text54647);
+arObjs.push(text71651);
+arObjs.push(text71800);
 arObjs.push(text49348);
 arObjs.push(shape49347);
 
@@ -665,16 +562,14 @@ if( is.min ){
     appendElement(button90, null, null);
     appendElement(button84, null, null);
     appendElement(button78, null, null);
-    appendElement(button71, null, null);
-    appendElement(button64, null, null);
     appendElement(button49353, null, null);
     appendElement(image96, null, null);
     appendElement(image98, null, null);
     appendElement(image307, null, null);
     appendElement(image324, null, null);
     appendElement(image290, null, null);
-    appendElement(text54648, null, null);
-    appendElement(text54647, null, null);
+    appendElement(text71651, null, null);
+    appendElement(text71800, null, null);
     appendElement(text49348, null, null);
     appendElement(shape49347, null, null);
 }

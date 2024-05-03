@@ -130,7 +130,7 @@ function init() {
   findWH()
   if( is.min ){
     trivPageTracking.InitPageTracking();
-    PreloadResources(new Array(button90,button84,button78,button71,button64,og94,image96,image98,image307,image324,image290,text62494,shape30817,text30677))
+    PreloadResources(new Array(button90,button84,button78,button71,button64,og94,image96,image98,image307,image324,image290,shape30817,text62494,text30677))
     pageLayer = new ObjLayer(GetCurrentPageID());
     pageLayer.show(true);
     button90.init()
@@ -144,8 +144,8 @@ function init() {
     image307.init()
     image324.init()
     image290.init()
-    text62494.init()
     shape30817.init()
+    text62494.init()
     text30677.init()
     button90.activate()
     button84.activate()
@@ -158,8 +158,8 @@ function init() {
     image307.activate()
     image324.activate()
     image290.activate()
-    text62494.activate()
     shape30817.activate()
+    text62494.activate()
     text30677.activate()
     window.scrollTo(0,1);
     var titleManagerIndexWindow = (window && window.parent && window.parent.bIsTitleManagerIndexFile) ? window.parent : null;
@@ -514,7 +514,21 @@ image290.addBorder(0)
 image290.addOpacity(100)
 image290.build()
 
-text62494 = new ObjText('text62494',null,148,88,166,18,1,11,null,'div',null,0 )
+shape30817 = new ObjImage('shape30817','images/shape30817.png','Rubrik Penilaian Presentasi/Unjuk Kerja',34,133,371.000000,31.000000,1,11,'div','',0 )
+shape30817.initRotateAngle(0,0,0,-1.000000,-1.000000,369,29)
+shape30817.initHasShadow(0)
+shape30817.initHasReflection(0)
+shape30817.setUniqueFillID('rubrik_penilaian__shape30817')
+shape30817.addIe8Attr(34.000000, 133.000000, 371.000000, 31.000000, 0, 0)
+shape30817.initImageMap(1,'1,1,370,1,370,30,1,30,1,1','M 1.000000 1.000000 L 370.000000 1.000000 L 370.000000 30.000000 L 1.000000 30.000000 L 1.000000 1.000000 z', '', 'stroke:#B4A7D6; stroke-width:1; stroke-linejoin:round;stroke-dasharray: none; fill:#B4A7D6;"' , '')
+shape30817.setTextVal('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXMAAAAfCAYAAAAV+y0HAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAASUSURBVHhe7ZiLjbMnFES3n7SSUlJICkmf+fcoGmk0uvDhV7KO50jIwH0w4Atr7VcppZRSSimllFJKKaWUUkoppZRSSimllFJKKaWUUkoppZRSSik/jj++29+L9tt3O+Wv7/bnP91j8FeM96/YaX4G9+g69Tvl1Xv8SUxn9/t3o6Z83+6D3W0ntXpao5OeFanDtfgcaz/CPferfCAUnxchqAhPLwm+txabLo0erlvjiSFW3KJ5h3TRTnXJ/9m8ao8/iensNFZt8mhO3PJInjyI99bilJtct+ZZ0ce8HKEL4w+EfnGsLlHyaLHdE48+f+ik2ece5b++RP/GHh/hmQ+Wo5xTbTqvWPue7zxj+J5eoa2ULdOF4ZIy906PufbxzEv00x7zV+zxEdDxbC3UnOpuqk3nFefw6GP+qj9wpVySF0ZjClQw9kckxypm/RGg+SMkOw2bfrlkPGBTDtqKXEO6lQdcj+9Ha7tdyAauS/m9CY858ZvWncC+2+N0rrDad2qTP9x6VlpTjVy7va/WVn7hfcXwOZFxtNXZ6qxkU2yO/Ts/rUXFsLZid6zOWnlo2HRGrml3xuXDmYpjujxeUOBj+sRRpKBLkJfBLzBjj1cfH+XZQbz7SYO0Y0s7a2htj1d/p4u+59vF7Pw0Bu9PpN33qFw0nSvgnzGuTefDp+JWMVeaPTcw9jzpm2srv+fwvvapuES+yuPr5dq+zqR7sp3WovLT6O8gn+fUeoqn+fep3K7P47GdaCwfgF8Y9b2YhIpO+DhtwHhnn+I95gp0ZvNLP9lZB1IPY12ISZfD2SjfFCNO/HzdCcV78z1O604x+AGfjJP0p3nMSnPaxGrvjBPPQZzXntfmROpa6QS3T75pUztBMdo34xU6F2/ydx3OND+dcflw8sJQGIyTLCgfT8XGmHmY7Bmvwky/FVdF7HtKUk9qmfo6J419/Xv8IMeJx05M8cSs9g3E4EMTu5id5rTt9g7T2p7Dc4Hy+QPvuP9OJ/j4yiaN7rPD468edGynZy18/uqMywej4vACm4oq53y88l89YjDFS8tJcV75YV89Aqln0gLez3y+/j1+kOPEYyem+Fx/BX4rzc5Oc9oyz0q/r+05Vr7TPOv4/E4n7HRPtltqMfOhjVjmE+ZPz1r4fMafaiwfgIrWC0RzXlj0VZxpzyKkuLCLqUh9zvu6CKuCF/jsilga0CqkP/WstKifFzvHt/qJHCceOzHF40/ctG/Pxfn6/Com1/Cx96/2vlpbOfCfvvNJm3L73E4n+JhPra9csrnfaS3mWqBYrSNuOWuheWldnXH5YFRYal5IbqOv4qRRXDT6zKuo3C7IqXnl9zlvrJO58iKlZtqKXAd8jlzax67h53G+f2+3+Pk8Y4ex+9MSX4e+4zaPTS3OFONzk2bXyffk/r535qe1c01/4Jyr87jSCczhB6ta9kbcVS16HjXtIfe2s4HPSadw7e7n2jOmlFL+l/Do6WF/N95ZeymlPBUexPxl/S68s/ZSSnkKq39dvAPvrL2UUkoppZRSSimllFJKKaWUUkoppZRSSinlPfn6+gX7GwI8+iqb5wAAAABJRU5ErkJggg==' , 'fill:url(#Text_rubrik_penilaian__shape30817)')
+shape30817.setUseSvgFile(1)
+shape30817.addBorder(0)
+shape30817.initLineWeight(1)
+shape30817.addOpacity(100)
+shape30817.build()
+
+text62494 = new ObjText('text62494',null,148,88,166,18,1,12,null,'div',null,0 )
 text62494.initSLine(0)
 text62494.initHasBullet(0)
 text62494.initRotateAngle(0,0,0)
@@ -531,21 +545,7 @@ text62494.arrCSSStyles.push('span.text62494Font2 { font-size:15px; font-family:"
 text62494.addInnerText('<div id=\"text62494\"><a id=\"text62494anc\" style=\"display:block;height:0px;width:0px;\"></a>\n<p  style=\"margin-left:0px;text-indent:0px;margin-top:0px;margin-bottom:0px;text-align:justify;\" >\n<span class=\"text62494Font1\"  >RUBRIK PENILAIAN </span ><span class=\"text62494Font2\" style=\"background-color:transparent\" >\n</span ></p >\n</div>\n');
 text62494.build()
 
-shape30817 = new ObjImage('shape30817','images/shape30817.png','Rubrik Penilaian Presentasi/Unjuk Kerja',38,145,371.000000,31.000000,1,12,'div','',0 )
-shape30817.initRotateAngle(0,0,0,-1.000000,-1.000000,369,29)
-shape30817.initHasShadow(0)
-shape30817.initHasReflection(0)
-shape30817.setUniqueFillID('rubrik_penilaian__shape30817')
-shape30817.addIe8Attr(38.000000, 145.000000, 371.000000, 31.000000, 0, 0)
-shape30817.initImageMap(1,'1,1,370,1,370,30,1,30,1,1','M 1.000000 1.000000 L 370.000000 1.000000 L 370.000000 30.000000 L 1.000000 30.000000 L 1.000000 1.000000 z', '', 'stroke:#B4A7D6; stroke-width:1; stroke-linejoin:round;stroke-dasharray: none; fill:#B4A7D6;"' , '')
-shape30817.setTextVal('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXMAAAAfCAYAAAAV+y0HAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAASUSURBVHhe7ZiLjbMnFES3n7SSUlJICkmf+fcoGmk0uvDhV7KO50jIwH0w4Atr7VcppZRSSimllFJKKaWUUkoppZRSSimllFJKKaWUUkoppZRSSik/jj++29+L9tt3O+Wv7/bnP91j8FeM96/YaX4G9+g69Tvl1Xv8SUxn9/t3o6Z83+6D3W0ntXpao5OeFanDtfgcaz/CPferfCAUnxchqAhPLwm+txabLo0erlvjiSFW3KJ5h3TRTnXJ/9m8ao8/iensNFZt8mhO3PJInjyI99bilJtct+ZZ0ce8HKEL4w+EfnGsLlHyaLHdE48+f+ik2ece5b++RP/GHh/hmQ+Wo5xTbTqvWPue7zxj+J5eoa2ULdOF4ZIy906PufbxzEv00x7zV+zxEdDxbC3UnOpuqk3nFefw6GP+qj9wpVySF0ZjClQw9kckxypm/RGg+SMkOw2bfrlkPGBTDtqKXEO6lQdcj+9Ha7tdyAauS/m9CY858ZvWncC+2+N0rrDad2qTP9x6VlpTjVy7va/WVn7hfcXwOZFxtNXZ6qxkU2yO/Ts/rUXFsLZid6zOWnlo2HRGrml3xuXDmYpjujxeUOBj+sRRpKBLkJfBLzBjj1cfH+XZQbz7SYO0Y0s7a2htj1d/p4u+59vF7Pw0Bu9PpN33qFw0nSvgnzGuTefDp+JWMVeaPTcw9jzpm2srv+fwvvapuES+yuPr5dq+zqR7sp3WovLT6O8gn+fUeoqn+fep3K7P47GdaCwfgF8Y9b2YhIpO+DhtwHhnn+I95gp0ZvNLP9lZB1IPY12ISZfD2SjfFCNO/HzdCcV78z1O604x+AGfjJP0p3nMSnPaxGrvjBPPQZzXntfmROpa6QS3T75pUztBMdo34xU6F2/ydx3OND+dcflw8sJQGIyTLCgfT8XGmHmY7Bmvwky/FVdF7HtKUk9qmfo6J419/Xv8IMeJx05M8cSs9g3E4EMTu5id5rTt9g7T2p7Dc4Hy+QPvuP9OJ/j4yiaN7rPD468edGynZy18/uqMywej4vACm4oq53y88l89YjDFS8tJcV75YV89Aqln0gLez3y+/j1+kOPEYyem+Fx/BX4rzc5Oc9oyz0q/r+05Vr7TPOv4/E4n7HRPtltqMfOhjVjmE+ZPz1r4fMafaiwfgIrWC0RzXlj0VZxpzyKkuLCLqUh9zvu6CKuCF/jsilga0CqkP/WstKifFzvHt/qJHCceOzHF40/ctG/Pxfn6/Com1/Cx96/2vlpbOfCfvvNJm3L73E4n+JhPra9csrnfaS3mWqBYrSNuOWuheWldnXH5YFRYal5IbqOv4qRRXDT6zKuo3C7IqXnl9zlvrJO58iKlZtqKXAd8jlzax67h53G+f2+3+Pk8Y4ex+9MSX4e+4zaPTS3OFONzk2bXyffk/r535qe1c01/4Jyr87jSCczhB6ta9kbcVS16HjXtIfe2s4HPSadw7e7n2jOmlFL+l/Do6WF/N95ZeymlPBUexPxl/S68s/ZSSnkKq39dvAPvrL2UUkoppZRSSimllFJKKaWUUkoppZRSSinlPfn6+gX7GwI8+iqb5wAAAABJRU5ErkJggg==' , 'fill:url(#Text_rubrik_penilaian__shape30817)')
-shape30817.setUseSvgFile(1)
-shape30817.addBorder(0)
-shape30817.initLineWeight(1)
-shape30817.addOpacity(100)
-shape30817.build()
-
-text30677 = new ObjText('text30677',null,20,192,438,476,1,13,-1,'div',null,0 )
+text30677 = new ObjText('text30677',null,6,175,474,501,1,13,-1,'div',null,0 )
 text30677.initSLine(0)
 text30677.initHasBullet(0)
 text30677.initRotateAngle(0,0,0)
@@ -554,7 +554,7 @@ text30677.initHasTextShadow(0)
 text30677.initHasBorder(0)
 text30677.initHasOutline(0)
 text30677.initHasMargin(0)
-text30677.addIe8Attr(20, 192, 438, 476, 0, 0)
+text30677.addIe8Attr(6, 175, 474, 501, 0, 0)
 text30677.addOpacity(100)
 text30677.arrCSSStyles = new Array();
 text30677.arrCSSStyles.push('span.text30677Font1 { font-size:11px; font-family:"Times New Roman", serif; color:#000000; font-weight:bold;}');
@@ -575,8 +575,8 @@ arObjs.push(image98);
 arObjs.push(image307);
 arObjs.push(image324);
 arObjs.push(image290);
-arObjs.push(text62494);
 arObjs.push(shape30817);
+arObjs.push(text62494);
 arObjs.push(text30677);
 
 
@@ -615,8 +615,8 @@ if( is.min ){
     appendElement(image307, null, null);
     appendElement(image324, null, null);
     appendElement(image290, null, null);
-    appendElement(text62494, null, null);
     appendElement(shape30817, null, null);
+    appendElement(text62494, null, null);
     appendElement(text30677, null, null);
 }
 </script>
