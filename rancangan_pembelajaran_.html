@@ -130,7 +130,7 @@ function init() {
   findWH()
   if( is.min ){
     trivPageTracking.InitPageTracking();
-    PreloadResources(new Array(button90,button84,button78,button71,button64,og94,image96,image98,image307,image324,image290,text60818,shape26728,shape27484,shape26550,shape27603,shape26358,text27417,text27548,text27907,text27787,text27758,text26444))
+    PreloadResources(new Array(button90,button84,button78,button71,button64,og94,image96,image98,image307,image324,image290,text27787,text60818,shape26728,shape27484,shape26550,shape27603,shape26358,text27417,text27548,text27907,text27758,text26444))
     pageLayer = new ObjLayer(GetCurrentPageID());
     pageLayer.show(true);
     button90.init()
@@ -144,6 +144,7 @@ function init() {
     image307.init()
     image324.init()
     image290.init()
+    text27787.init()
     text60818.init()
     shape26728.init()
     shape27484.init()
@@ -153,7 +154,6 @@ function init() {
     text27417.init()
     text27548.init()
     text27907.init()
-    text27787.init()
     text27758.init()
     text26444.init()
     button90.activate()
@@ -167,6 +167,7 @@ function init() {
     image307.activate()
     image324.activate()
     image290.activate()
+    text27787.activate()
     text60818.activate()
     shape26728.activate()
     shape27484.activate()
@@ -176,7 +177,6 @@ function init() {
     text27417.activate()
     text27548.activate()
     text27907.activate()
-    text27787.activate()
     text27758.activate()
     text26444.activate()
     window.scrollTo(0,1);
@@ -532,146 +532,7 @@ image290.addBorder(0)
 image290.addOpacity(100)
 image290.build()
 
-text60818 = new ObjText('text60818',null,111,89,244,18,1,11,null,'div',null,0 )
-text60818.initSLine(0)
-text60818.initHasBullet(0)
-text60818.initRotateAngle(0,0,0)
-text60818.initHasOuterShadow(0)
-text60818.initHasTextShadow(0)
-text60818.initHasBorder(0)
-text60818.initHasOutline(0)
-text60818.initHasMargin(0)
-text60818.addIe8Attr(111, 89, 244, 18, 0, 0)
-text60818.addOpacity(100)
-text60818.arrCSSStyles = new Array();
-text60818.arrCSSStyles.push('span.text60818Font1 { font-size:16px; font-family:"Times New Roman", serif; color:#000000; background-color:#ea9999; font-weight:bold;}');
-text60818.arrCSSStyles.push('span.text60818Font2 { font-size:16px; font-family:"Times New Roman", serif; color:#000000; background-color:#ea9999;}');
-text60818.addInnerText('<div id=\"text60818\"><a id=\"text60818anc\" style=\"display:block;height:0px;width:0px;\"></a>\n<p  style=\"margin-left:0px;text-indent:0px;margin-top:0px;margin-bottom:0px;text-align:justify;\" >\n<span class=\"text60818Font1\"  >RANCANGAN PEMBELAJARAN </span ><span class=\"text60818Font2\" style=\"background-color:transparent\" >\n</span ></p >\n</div>\n');
-text60818.build()
-
-shape26728 = new ObjImage('shape26728','images/shape26728.png','10.9',22,335,69.000000,28.000000,1,12,'div','',0 )
-shape26728.initRotateAngle(0,0,0,-1.000000,-1.000000,67,26)
-shape26728.initHasShadow(0)
-shape26728.initHasReflection(0)
-shape26728.setUniqueFillID('rancangan_pembelajaran__shape26728')
-shape26728.addIe8Attr(22.000000, 335.000000, 69.000000, 28.000000, 0, 0)
-shape26728.initImageMap(1,'7,1,62,1,64,2,66,3,68,5,68,7,68,21,68,23,66,25,64,27,62,27,7,27,5,27,3,25,2,23,1,21,1,7,2,5,3,3,5,2,7,1','M 7.000000 1.000000 L 62.000000 1.000000 L 64.312500 1.500000 L 66.250000 2.750000 L 67.500000 4.687500 L 68.000000 7.000000 L 68.000000 21.000000 L 67.500000 23.312500 L 66.250000 25.250000 L 64.312500 26.500000 L 62.000000 27.000000 L 7.000000 27.000000 L 4.750000 26.562500 L 2.812500 25.250000 L 1.500000 23.312500 L 1.000000 21.000000 L 1.000000 7.000000 L 1.500000 4.687500 L 2.750000 2.750000 L 4.687500 1.500000 L 7.000000 1.000000 z', '', 'stroke:#9FC5F8; stroke-width:1; stroke-linejoin:round;stroke-dasharray: none; fill:#9FC5F8;"' , '')
-shape26728.setTextVal('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEUAAAAcCAYAAAA3DHIWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD3SURBVFhH7ZTRCcMwDESzT1fpKB2kg3TPxgd5IITspP2yyT0QaR3JWOdTNmOMMcaYm/Fo8WrxOZ6ZZ4vvEcpR/hVinUL/lyAfPIvCe9bJO0P5ykMI6pYRRrxb6NBZFDlD67ijl5dBBOoQSfstA4fOzebmEEXPHtF9wP5xbXoqUSREr7nRjUdRslPiXtNTiTK68ZEoUUwchcOWH59/RRF6T22M0dhNx6+inDUntyBMNU5LUIkSx4BmGIOYd8ZVIaej1yy3nUXR7UO1Bgi71LcEaCzfZnZQbjC6KdcyNssJEpuKEUEwRdVg5RT9Vm7lHmOMMcaYG7BtO1jre+YbVDcRAAAAAElFTkSuQmCC' , 'fill:url(#Text_rancangan_pembelajaran__shape26728)')
-shape26728.setUseSvgFile(1)
-shape26728.addBorder(0)
-shape26728.initLineWeight(1)
-shape26728.addOpacity(100)
-shape26728.build()
-
-shape27484 = new ObjImage('shape27484','images/shape27484.png','10.10',22,384,69.000000,28.000000,1,13,'div','',0 )
-shape27484.initRotateAngle(0,0,0,-1.000000,-1.000000,67,26)
-shape27484.initHasShadow(0)
-shape27484.initHasReflection(0)
-shape27484.setUniqueFillID('rancangan_pembelajaran__shape27484')
-shape27484.addIe8Attr(22.000000, 384.000000, 69.000000, 28.000000, 0, 0)
-shape27484.initImageMap(1,'7,1,62,1,64,2,66,3,68,5,68,7,68,21,68,23,66,25,64,27,62,27,7,27,5,27,3,25,2,23,1,21,1,7,2,5,3,3,5,2,7,1','M 7.000000 1.000000 L 62.000000 1.000000 L 64.312500 1.500000 L 66.250000 2.750000 L 67.500000 4.687500 L 68.000000 7.000000 L 68.000000 21.000000 L 67.500000 23.312500 L 66.250000 25.250000 L 64.312500 26.500000 L 62.000000 27.000000 L 7.000000 27.000000 L 4.750000 26.562500 L 2.812500 25.250000 L 1.500000 23.312500 L 1.000000 21.000000 L 1.000000 7.000000 L 1.500000 4.687500 L 2.750000 2.750000 L 4.687500 1.500000 L 7.000000 1.000000 z', '', 'stroke:#9FC5F8; stroke-width:1; stroke-linejoin:round;stroke-dasharray: none; fill:#9FC5F8;"' , '')
-shape27484.setTextVal('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEUAAAAcCAYAAAA3DHIWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADUSURBVFhH7dSBCcMwDATA7NNVOkoH6SDds/VDHh4jt04TKRD+QLg4jvigJouZmZnZxd1aPVq91rV3b/VeC2dwfkZW33QaDNWH53Xu89wvWX1LPVtF4TFB7HOKo3MjWX1LIEwUCntReKwzsvqWiMIjMMMTz2HSM7L6lojC63eBtobP6lsiK3xW3xJbw+/5phzRt0QUXt/9/oOo577J6ltiFAp/5yg8pk3RHu3pezqGwqr6SeO3vvc69f5e+LfvqfShtBQfDBUF53Wd8hF9zczMzC5kWT7/0JpOUC2nzwAAAABJRU5ErkJggg==' , 'fill:url(#Text_rancangan_pembelajaran__shape27484)')
-shape27484.setUseSvgFile(1)
-shape27484.addBorder(0)
-shape27484.initLineWeight(1)
-shape27484.addOpacity(100)
-shape27484.build()
-
-shape26550 = new ObjImage('shape26550','images/shape26550.png','Tujuan Pembelajaran',21,293,191.000000,29.000000,1,14,'div','',0 )
-shape26550.initRotateAngle(0,0,0,-1.000000,-1.000000,189,27)
-shape26550.initHasShadow(0)
-shape26550.initHasReflection(0)
-shape26550.setUniqueFillID('rancangan_pembelajaran__shape26550')
-shape26550.addIe8Attr(21.000000, 293.000000, 191.000000, 29.000000, 0, 0)
-shape26550.initImageMap(1,'1,1,190,1,190,28,1,28,1,1','M 1.000000 1.000000 L 190.000000 1.000000 L 190.000000 28.000000 L 1.000000 28.000000 L 1.000000 1.000000 z', '', 'stroke:#D5A6BD; stroke-width:1; stroke-linejoin:round;stroke-dasharray: none; fill:#D5A6BD;"' , '')
-shape26550.setTextVal('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAL8AAAAdCAYAAAD7Pr3jAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMhSURBVHhe7ZWLrRMxEEVfP7RCKRRCIfQJOaAjja5sr5Pwkl2YI1kbr+d7PUk+mqZpmqZpmqZpmqZpmqZpmqZpmqb5w8+N9eO2dvl2W/h8/b17D9YwW99v67Ohf3Sjlke5N8YZtL8MX24LsQTRHBDOwAvYBdtXDdgK6s9aan/PDOUR5ngmj7XfE+Ms2l8CBqQKNRp+uGf4z/TrQ285DL67p6dHMM8zX7J7Y5xJ+8sxG/6rMhp+B+RVw//MIP6NGM0mR8PvP0UdJnwYJO3TZscHODd3Xjh2DC0+Di/r6BfRmDX36B3xiW3c7Mfc1q0dZ7VuzsT3+FabrHmVW7+qRY2VZ9bDkpl9fU9OdR2d1/dQNdGPlb1dChq0ES9Aqhg0ybl7FqTNjg+Q10uvNlDFZXkJ7rPOivl5wqg/86UN9VR7lpdb+zLOzIY4UGPZwyo3GEN7njOdak3WsLKHqi3n7Hmu/KoPy9rcY39JaGTVhAIrbgoDiqPNro8iQp7XusT9Suw6EC4vVUY22kGtVz97xFew592sbzBO2uQyt+dqc6STdRl/1958cuT36H2cmtrUqIkUF7SXtNnxEfI7RPW8DqC4X4ltrDqkiXHqZVdqbnONesphHw1/1sNn1ix3Dr/MdBrVBUf2M31mfo/ex6mh2VUTI3G1l7TZ8SEXIrNGwj4qthc3u1wwTq2vUnOba9RTDnvuwXp8x+e0qeTwk3+lE3FqvF371OfIb/TOPWeX5F3D796ceV7rEvcrsbk8bFbDf2RTL9pco56M47vR8Geco9zGcPjT371kXbv2mf/I79H7ODWKwVLwSoo1EiEvYMfHPcKx8rzWlTajOqHa+As2osY2Fs9RvZ47lHVocpC1UQfjGAOOcucXStvUQIy3a2+N5Kkc+dW606b2dwlq8XWlKOCF8PRCXezzAmDXJxf2+q5WCj6LV4e1kvbYoUnW6lnd45vv2GdM+iBmMsudfWOXti519ZwnrOxHulrfvX658j7+eRAM8RTuvxPgjbT2bwbhEd1fweZ1tPZvRuH5Wxz9vTefR2vfNE3TNE3TNE3TNNfj4+MXqA13YdbH790AAAAASUVORK5CYII=' , 'fill:url(#Text_rancangan_pembelajaran__shape26550)')
-shape26550.setUseSvgFile(1)
-shape26550.addBorder(0)
-shape26550.initLineWeight(1)
-shape26550.addOpacity(100)
-shape26550.build()
-
-shape27603 = new ObjImage('shape27603','images/shape27603.png','Elemen CP yang dituju ',24,436,191.000000,29.000000,1,15,'div','',0 )
-shape27603.initRotateAngle(0,0,0,-1.000000,-1.000000,189,27)
-shape27603.initHasShadow(0)
-shape27603.initHasReflection(0)
-shape27603.setUniqueFillID('rancangan_pembelajaran__shape27603')
-shape27603.addIe8Attr(24.000000, 436.000000, 191.000000, 29.000000, 0, 0)
-shape27603.initImageMap(1,'1,1,190,1,190,28,1,28,1,1','M 1.000000 1.000000 L 190.000000 1.000000 L 190.000000 28.000000 L 1.000000 28.000000 L 1.000000 1.000000 z', '', 'stroke:#D5A6BD; stroke-width:1; stroke-linejoin:round;stroke-dasharray: none; fill:#D5A6BD;"' , '')
-shape27603.setTextVal('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAL8AAAAdCAYAAAD7Pr3jAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAN5SURBVHhe7ZaLbdxADAXdT1pJKSkkhaTP5CbAAA8PK2kdx1HO5gCEtLsklz+d/TIMwzAMwzAMwzAMwzAMwzAMwzAMn4WfG/L1IcDzx0O+/V49L8RPHpkj6+8P+fIQzvOsBb1nJnMU12/trX6cmf8eArWxHTSNdujVeWuB7oKmm0cPcDdtpZt1euYamAMi5srzLRzV97/GYvTw+ysBJITOszb+qjGcZ/7mm/ruvXVI7iQ/APHjz97y3vNwhX5ea3cbWYxufmLjnyaxwKYg5LsCnWz+avj189GGv6HHZ7X6MKyGn+fO8GPrLyrCuwXjybD4i5p6nOlPu2TXr8OI5OA2+up7zlgN/2pPMhZ1cs+66aP3YTe39qEc0fVufc875tRLHbGvnEHr7NjcCkF0skgGDKzZt1naqcc+axLzXbF5+kBMvnXO/HZjjMX1UUE975zOMNaO4+yejFWwN06eNt48EdjNTT2e7WPF2T1APK7N1dyNwTXS9yLQOjs2t5NBmSx7FkLOCpJi49Mv72Dh07fF5wyu/HK/e+LaexrP9bHDKg7sj+4QddXLO8nR+oG6spOb9dKP66O4zMP6oqdPaR3XGeuOH85Wfs5sbiUD6mSTLsjKJkm/vEMXB7pA2uz4Fdfe0zggOYhXaNN1uCJzJIeVPfv6R2Qnt64h72d5eY/1XN3RPeheQ98L7ad1dmxuJYtxNHDQBdEmE0vS71HjoAuvzY5fce09jXec6TR/OvzGhz22eR/v7CPqIbLac51+Mh99HaFeDz920j1w/emH3+Z3QSgea8+b9GtzVsXQj3tXfrlfv+L6aAgyliO/zVUcZ2jLMzEG43QtO7lRp/Z7hrFYX2uRPuytOq4//PAbINLDz9rmdxFXdqnPe59bVHVAv+5d+c1zGpmDrf6KjAdfDhPwThzap0/2U3cH77JWok/85R2yk5vrlr5L0ie4zuHvHvDUp361UyfrKeq8xuY2DORMSMDi5B6YnOJQZZJ5lmtse88iHfnt/ZU4JCvw0XeSm/nA0R3Gtgs2zZFvYugar4TczmpwhL7NNW36XvK0f5xlPdNP9zhj4ylXNsMHw4/sPcBvDhf4Qd8F8eSP0wz1J8O/eMAwsv7brH5Z/TXtD+Jfwt3EcfdHONyIf+Lf85fPAVP8d+JOjIlY3uOjH4ZhGIZhGIZhGIbPxsvLLxJ5jXAx+5gQAAAAAElFTkSuQmCC' , 'fill:url(#Text_rancangan_pembelajaran__shape27603)')
-shape27603.setUseSvgFile(1)
-shape27603.addBorder(0)
-shape27603.initLineWeight(1)
-shape27603.addOpacity(100)
-shape27603.build()
-
-shape26358 = new ObjImage('shape26358','images/shape26358.png','STRUKTUR ATOM',70,144,313.000000,33.000000,1,16,'div','',0 )
-shape26358.initRotateAngle(0,0,0,-1.000000,-1.000000,311,31)
-shape26358.initHasShadow(0)
-shape26358.initHasReflection(0)
-shape26358.setUniqueFillID('rancangan_pembelajaran__shape26358')
-shape26358.addIe8Attr(70.000000, 144.000000, 313.000000, 33.000000, 0, 0)
-shape26358.initImageMap(1,'8,1,305,1,308,2,310,3,311,5,312,8,312,25,311,28,310,30,308,31,305,32,8,32,5,32,3,30,2,28,1,25,1,8,2,5,3,3,5,2,8,1','M 8.000000 1.000000 L 305.000000 1.000000 L 307.750000 1.562500 L 309.937500 3.062500 L 311.437500 5.312500 L 312.000000 8.000000 L 312.000000 25.000000 L 311.437500 27.750000 L 309.937500 29.937500 L 307.750000 31.437500 L 305.000000 32.000000 L 8.000000 32.000000 L 5.375000 31.500000 L 3.062500 30.000000 L 1.562500 27.687500 L 1.000000 25.000000 L 1.000000 8.000000 L 1.562500 5.312500 L 3.062500 3.062500 L 5.312500 1.562500 L 8.000000 1.000000 z', '', 'stroke:#A2C4C9; stroke-width:1; stroke-linejoin:round;stroke-dasharray: none; fill:#A2C4C9;"' , '')
-shape26358.setTextVal('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATkAAAAhCAYAAACiE9yzAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOQSURBVHhe7ZbhbTQ3DAXdT1pJKSkkhaTPxPPjAQ+EtKtb5/M5wQxA3IoiKVIWCX+IiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIj8d/ntU/78lL9L/vqU3z8FWr8T7P8Yuimc0ezscy6/c2/ng35lT20w9Su5quFJTpFZ9ynkc+W7OmsKMSbUgH7apcbQ+8hVLvP9cCciP4Y8zDxyBkMear5DN3kGSJompIHSFInRutB7+CVmYI2+41/FS37dZLEPdzV0/NOcgDU+J3Xf0b4rsh9O/i6QHOf9RD/tOw9kxbThXJEfQ/4LmY8bfYZcN+iqmaD9sWe//aJDJmmw3SBAP/d2Pui7geFJDU9yYj19okNeof1mPfAraor/3I8fshpgeUORPl/k7XQznTzOXTM1idnNkkbopgt3zYfvrvFaz/cuRnNSw5OcWE+fq7qvwD7xTnzvajqpuYdV29zlgg65iy/yFvphI6yveDrkolvFT4O0fYPP3Js+2KwacMV3Drno7u61wZYcO0++r7irKXkgO3bncRe7+Hzn7lf7Ij+CfqCRXVPdNRPMZo9PN3/zZKC0D/t8n3JSw5OcWLfPXd078AnJg98r7mo6iYNfYlBfwIe9xOg9aus9ZHenIm+lmyTSjzmcDIg0+5SdfRpkNwxWAyU+3Vx8n/Crh9yUV5qe3Dou55zE+Y4hl1w6Rr4TH3mlXpFvp5tq1RCvDDl+u3FW8SANModGIKduOmifznkXo/m3htzMCdv4nNS9Iueu5Kq2u5qSG7JjF6PX2ceW+vmFznt3pyJvIY+16aExuWsm6GaHbrA0RXM3UNDPHKdP57yLE05qeJITuvbJGlnVPUlek46zy/eupr6fXYzYUHvTPl1j2+W+ruKLvAWaYz7q3WOHkwHRjQDYxQeZxH51HqCfQyJNlTMgcZA5gJpXanglp/gkp7u6J/it8u44u7pOasp+8pvkTmddHbPP6Vzi27YiP4IMtDzsbqj52CH2u3388+D5zYPPAED47kboM2cDsp66PmPG6mbbDYS7GuArOZ3W3WR47PJJjJ3NV2pCnzznncWnYyZGauG37313vshb4EH2A0W6SUMe+xRsQzdaC2es/LsZ2O+BgBB7Nt3uDPSzjkhqOamh+WpOJ3XDPKPjY9t70+ZpTfOu0LHXrGqH3DXsau8aRERERERERERERERERERERERERERERERE5H/Ax8c/c6uU+xrCyucAAAAASUVORK5CYII=' , 'fill:url(#Text_rancangan_pembelajaran__shape26358)')
-shape26358.setUseSvgFile(1)
-shape26358.addBorder(0)
-shape26358.initLineWeight(1)
-shape26358.addOpacity(100)
-shape26358.build()
-
-text27417 = new ObjText('text27417',null,97,332,355,37,1,17,null,'div',null,0 )
-text27417.initSLine(0)
-text27417.initHasBullet(0)
-text27417.initRotateAngle(0,0,0)
-text27417.initHasOuterShadow(0)
-text27417.initHasTextShadow(0)
-text27417.initHasBorder(0)
-text27417.initHasOutline(0)
-text27417.initHasMargin(0)
-text27417.addIe8Attr(97, 332, 355, 37, 0, 0)
-text27417.addOpacity(100)
-text27417.arrCSSStyles = new Array();
-text27417.arrCSSStyles.push('span.text27417Font1 { font-size:16px; font-family:"Times New Roman", serif; color:#010101;}');
-text27417.arrCSSStyles.push('span.text27417Font2 { font-size:15px; font-family:"Arial", sans-serif; color:#010101;}');
-text27417.addInnerText('<div id=\"text27417\"><a id=\"text27417anc\" style=\"display:block;height:0px;width:0px;\"></a>\n<p  legLH=\"1.127\" style=\"margin-left:0px;text-indent:0px;line-height:0.980;margin-top:0px;margin-bottom:0px;text-align:justify;\" >\n<span class=\"text27417Font1\"  >Menjelaskan perkembangan teori atom mulai dari Dalton, Thomson, Rutherford, Bohr dan mekanika kuantum </span ><span class=\"text27417Font2\" style=\"background-color:transparent\" >\n</span ></p >\n</div>\n');
-text27417.build()
-
-text27548 = new ObjText('text27548',null,97,376,355,55,1,18,null,'div',null,0 )
-text27548.initSLine(0)
-text27548.initHasBullet(0)
-text27548.initRotateAngle(0,0,0)
-text27548.initHasOuterShadow(0)
-text27548.initHasTextShadow(0)
-text27548.initHasBorder(0)
-text27548.initHasOutline(0)
-text27548.initHasMargin(0)
-text27548.addIe8Attr(97, 376, 355, 55, 0, 0)
-text27548.addOpacity(100)
-text27548.arrCSSStyles = new Array();
-text27548.arrCSSStyles.push('span.text27548Font1 { font-size:16px; font-family:"Times New Roman", serif; color:#010101;}');
-text27548.arrCSSStyles.push('span.text27548Font2 { font-size:15px; font-family:"Arial", sans-serif; color:#010101;}');
-text27548.addInnerText('<div id=\"text27548\"><a id=\"text27548anc\" style=\"display:block;height:0px;width:0px;\"></a>\n<p  legLH=\"1.127\" style=\"margin-left:0px;text-indent:0px;line-height:0.980;margin-top:0px;margin-bottom:0px;text-align:justify;\" >\n<span class=\"text27548Font1\"  >Menganalisis dan menyimpulkan bahwa nomor atom, nomor massa dan isotop berkaitan dengan partikel dasar penyusun atom. </span ><span class=\"text27548Font2\" style=\"background-color:transparent\" >\n</span ></p >\n</div>\n');
-text27548.build()
-
-text27907 = new ObjText('text27907',null,25,617,429,93,1,19,null,'div',null,0 )
-text27907.initSLine(0)
-text27907.initHasBullet(0)
-text27907.initRotateAngle(0,0,0)
-text27907.initHasOuterShadow(0)
-text27907.initHasTextShadow(0)
-text27907.initHasBorder(0)
-text27907.initHasOutline(0)
-text27907.initHasMargin(0)
-text27907.addIe8Attr(25, 617, 429, 93, 0, 0)
-text27907.addOpacity(100)
-text27907.arrCSSStyles = new Array();
-text27907.arrCSSStyles.push('span.text27907Font1 { font-size:16px; font-family:"Times New Roman", serif; color:#009e0f;}');
-text27907.arrCSSStyles.push('span.text27907Font2 { font-size:16px; font-family:"Times New Roman", serif; color:#000000;}');
-text27907.arrCSSStyles.push('span.text27907Font3 { font-size:15px; font-family:"Arial", sans-serif; color:#010101;}');
-text27907.addInnerText('<div id=\"text27907\"><a id=\"text27907anc\" style=\"display:block;height:0px;width:0px;\"></a>\n<p  legLH=\"1.127\" style=\"margin-left:0px;text-indent:0px;line-height:0.980;margin-top:0px;margin-bottom:0px;text-align:justify;\" >\n<span class=\"text27907Font1\"  >Apakah pengetahuan latar yang perlu dimiliki siswa sebelum mempelajari topik ini ?\n</span ></p >\n<p  legLH=\"1.127\" style=\"margin-left:0px;text-indent:0px;line-height:0.980;margin-top:0px;margin-bottom:0px;text-align:justify;\" >\n<span class=\"text27907Font2\" style=\"background-color:transparent\" >\n&nbsp;</span ></p >\n<p  legLH=\"1.127\" style=\"margin-left:0px;text-indent:0px;line-height:0.980;margin-top:0px;margin-bottom:0px;text-align:justify;\" >\n<span class=\"text27907Font2\"  >Siswa sudah mengenal tentang teori atom, partikel penyusun atom dan penulisan notasi atom</span ><span class=\"text27907Font3\" style=\"background-color:transparent\" >\n</span ></p >\n</div>\n');
-text27907.build()
-
-text27787 = new ObjText('text27787',null,23,512,425,92,1,20,null,'div',null,0 )
+text27787 = new ObjText('text27787',null,23,512,425,92,1,11,null,'div',null,0 )
 text27787.initSLine(0)
 text27787.initHasBullet(0)
 text27787.initRotateAngle(0,0,0)
@@ -691,6 +552,145 @@ text27787.arrCSSStyles.push('span.text27787Font4 { font-size:16px; font-family:"
 text27787.arrCSSStyles.push('li.text27787Font4 { font-size:16px; font-family:"Times New Roman", serif; color:#010101; font-weight:normal; font-style:normal; text-decoration:normal;}');
 text27787.addInnerText('<div id=\"text27787\"><a id=\"text27787anc\" style=\"display:block;height:0px;width:0px;\"></a>\n<p  legLH=\"1.127\" style=\"margin-left:0px;text-indent:0px;line-height:0.980;margin-top:0px;margin-bottom:0px;text-align:justify;\" >\n<span class=\"text27787Font2\"  >Pertanyaan Pemantik :</span ><span class=\"text27787Font3\" style=\"background-color:transparent\" >\n</span ></p >\n<ol  start=\"1\" style=\"list-style-position:outside;text-align:justify;\" >\n<li  class=\"text27787Font4\" style=\"line-height:1.127;position:relative;padding-left:10px;list-style-type:decimal;margin-left:26px;margin-top:0px;margin-bottom:0px;\"><span class=\"text27787Font4\"  >Apakah kalian mengetahui pengertian atom?\n</span ></li >\n<li  class=\"text27787Font4\" style=\"line-height:1.127;position:relative;padding-left:10px;list-style-type:decimal;margin-left:26px;margin-top:0px;margin-bottom:0px;\"><span class=\"text27787Font4\"  >Menurutmu mengapa model atom mengalami perkembangan?\n</span ></li >\n<li  class=\"text27787Font4\" style=\"line-height:1.127;position:relative;padding-left:10px;list-style-type:decimal;margin-left:26px;margin-top:0px;margin-bottom:0px;\"><span class=\"text27787Font4\"  >Jelaskan apa hubungan nomor atom, nomor massa dan isotop berkaitan dengan partikel dasar penyusun atom?\n</span ></li >\n</ol >\n</div>\n');
 text27787.build()
+
+text60818 = new ObjText('text60818',null,77,89,326,18,1,12,null,'div',null,0 )
+text60818.initSLine(0)
+text60818.initHasBullet(0)
+text60818.initRotateAngle(0,0,0)
+text60818.initHasOuterShadow(0)
+text60818.initHasTextShadow(0)
+text60818.initHasBorder(0)
+text60818.initHasOutline(0)
+text60818.initHasMargin(0)
+text60818.addIe8Attr(77, 89, 326, 18, 0, 0)
+text60818.addOpacity(100)
+text60818.arrCSSStyles = new Array();
+text60818.arrCSSStyles.push('span.text60818Font1 { font-size:16px; font-family:"Times New Roman", serif; color:#000000; background-color:#ea9999; font-weight:bold;}');
+text60818.arrCSSStyles.push('span.text60818Font2 { font-size:16px; font-family:"Times New Roman", serif; color:#000000; background-color:#ea9999;}');
+text60818.addInnerText('<div id=\"text60818\"><a id=\"text60818anc\" style=\"display:block;height:0px;width:0px;\"></a>\n<p  style=\"margin-left:0px;text-indent:0px;margin-top:0px;margin-bottom:0px;text-align:center;\" >\n<span class=\"text60818Font1\"  >RANCANGAN PEMBELAJARAN </span ><span class=\"text60818Font2\" style=\"background-color:transparent\" >\n</span ></p >\n</div>\n');
+text60818.build()
+
+shape26728 = new ObjImage('shape26728','images/shape26728.png','10.9',22,335,69.000000,28.000000,1,13,'div','',0 )
+shape26728.initRotateAngle(0,0,0,-1.000000,-1.000000,67,26)
+shape26728.initHasShadow(0)
+shape26728.initHasReflection(0)
+shape26728.setUniqueFillID('rancangan_pembelajaran__shape26728')
+shape26728.addIe8Attr(22.000000, 335.000000, 69.000000, 28.000000, 0, 0)
+shape26728.initImageMap(1,'7,1,62,1,64,2,66,3,68,5,68,7,68,21,68,23,66,25,64,27,62,27,7,27,5,27,3,25,2,23,1,21,1,7,2,5,3,3,5,2,7,1','M 7.000000 1.000000 L 62.000000 1.000000 L 64.312500 1.500000 L 66.250000 2.750000 L 67.500000 4.687500 L 68.000000 7.000000 L 68.000000 21.000000 L 67.500000 23.312500 L 66.250000 25.250000 L 64.312500 26.500000 L 62.000000 27.000000 L 7.000000 27.000000 L 4.750000 26.562500 L 2.812500 25.250000 L 1.500000 23.312500 L 1.000000 21.000000 L 1.000000 7.000000 L 1.500000 4.687500 L 2.750000 2.750000 L 4.687500 1.500000 L 7.000000 1.000000 z', '', 'stroke:#9FC5F8; stroke-width:1; stroke-linejoin:round;stroke-dasharray: none; fill:#9FC5F8;"' , '')
+shape26728.setTextVal('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEUAAAAcCAYAAAA3DHIWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD3SURBVFhH7ZTRCcMwDESzT1fpKB2kg3TPxgd5IITspP2yyT0QaR3JWOdTNmOMMcaYm/Fo8WrxOZ6ZZ4vvEcpR/hVinUL/lyAfPIvCe9bJO0P5ykMI6pYRRrxb6NBZFDlD67ijl5dBBOoQSfstA4fOzebmEEXPHtF9wP5xbXoqUSREr7nRjUdRslPiXtNTiTK68ZEoUUwchcOWH59/RRF6T22M0dhNx6+inDUntyBMNU5LUIkSx4BmGIOYd8ZVIaej1yy3nUXR7UO1Bgi71LcEaCzfZnZQbjC6KdcyNssJEpuKEUEwRdVg5RT9Vm7lHmOMMcaYG7BtO1jre+YbVDcRAAAAAElFTkSuQmCC' , 'fill:url(#Text_rancangan_pembelajaran__shape26728)')
+shape26728.setUseSvgFile(1)
+shape26728.addBorder(0)
+shape26728.initLineWeight(1)
+shape26728.addOpacity(100)
+shape26728.build()
+
+shape27484 = new ObjImage('shape27484','images/shape27484.png','10.10',22,384,69.000000,28.000000,1,14,'div','',0 )
+shape27484.initRotateAngle(0,0,0,-1.000000,-1.000000,67,26)
+shape27484.initHasShadow(0)
+shape27484.initHasReflection(0)
+shape27484.setUniqueFillID('rancangan_pembelajaran__shape27484')
+shape27484.addIe8Attr(22.000000, 384.000000, 69.000000, 28.000000, 0, 0)
+shape27484.initImageMap(1,'7,1,62,1,64,2,66,3,68,5,68,7,68,21,68,23,66,25,64,27,62,27,7,27,5,27,3,25,2,23,1,21,1,7,2,5,3,3,5,2,7,1','M 7.000000 1.000000 L 62.000000 1.000000 L 64.312500 1.500000 L 66.250000 2.750000 L 67.500000 4.687500 L 68.000000 7.000000 L 68.000000 21.000000 L 67.500000 23.312500 L 66.250000 25.250000 L 64.312500 26.500000 L 62.000000 27.000000 L 7.000000 27.000000 L 4.750000 26.562500 L 2.812500 25.250000 L 1.500000 23.312500 L 1.000000 21.000000 L 1.000000 7.000000 L 1.500000 4.687500 L 2.750000 2.750000 L 4.687500 1.500000 L 7.000000 1.000000 z', '', 'stroke:#9FC5F8; stroke-width:1; stroke-linejoin:round;stroke-dasharray: none; fill:#9FC5F8;"' , '')
+shape27484.setTextVal('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEUAAAAcCAYAAAA3DHIWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADUSURBVFhH7dSBCcMwDATA7NNVOkoH6SDds/VDHh4jt04TKRD+QLg4jvigJouZmZnZxd1aPVq91rV3b/VeC2dwfkZW33QaDNWH53Xu89wvWX1LPVtF4TFB7HOKo3MjWX1LIEwUCntReKwzsvqWiMIjMMMTz2HSM7L6lojC63eBtobP6lsiK3xW3xJbw+/5phzRt0QUXt/9/oOo577J6ltiFAp/5yg8pk3RHu3pezqGwqr6SeO3vvc69f5e+LfvqfShtBQfDBUF53Wd8hF9zczMzC5kWT7/0JpOUC2nzwAAAABJRU5ErkJggg==' , 'fill:url(#Text_rancangan_pembelajaran__shape27484)')
+shape27484.setUseSvgFile(1)
+shape27484.addBorder(0)
+shape27484.initLineWeight(1)
+shape27484.addOpacity(100)
+shape27484.build()
+
+shape26550 = new ObjImage('shape26550','images/shape26550.png','Tujuan Pembelajaran',21,293,191.000000,29.000000,1,15,'div','',0 )
+shape26550.initRotateAngle(0,0,0,-1.000000,-1.000000,189,27)
+shape26550.initHasShadow(0)
+shape26550.initHasReflection(0)
+shape26550.setUniqueFillID('rancangan_pembelajaran__shape26550')
+shape26550.addIe8Attr(21.000000, 293.000000, 191.000000, 29.000000, 0, 0)
+shape26550.initImageMap(1,'1,1,190,1,190,28,1,28,1,1','M 1.000000 1.000000 L 190.000000 1.000000 L 190.000000 28.000000 L 1.000000 28.000000 L 1.000000 1.000000 z', '', 'stroke:#D5A6BD; stroke-width:1; stroke-linejoin:round;stroke-dasharray: none; fill:#D5A6BD;"' , '')
+shape26550.setTextVal('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAL8AAAAdCAYAAAD7Pr3jAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMhSURBVHhe7ZWLrRMxEEVfP7RCKRRCIfQJOaAjja5sr5Pwkl2YI1kbr+d7PUk+mqZpmqZpmqZpmqZpmqZpmqZpmqb5w8+N9eO2dvl2W/h8/b17D9YwW99v67Ohf3Sjlke5N8YZtL8MX24LsQTRHBDOwAvYBdtXDdgK6s9aan/PDOUR5ngmj7XfE+Ms2l8CBqQKNRp+uGf4z/TrQ285DL67p6dHMM8zX7J7Y5xJ+8sxG/6rMhp+B+RVw//MIP6NGM0mR8PvP0UdJnwYJO3TZscHODd3Xjh2DC0+Di/r6BfRmDX36B3xiW3c7Mfc1q0dZ7VuzsT3+FabrHmVW7+qRY2VZ9bDkpl9fU9OdR2d1/dQNdGPlb1dChq0ES9Aqhg0ybl7FqTNjg+Q10uvNlDFZXkJ7rPOivl5wqg/86UN9VR7lpdb+zLOzIY4UGPZwyo3GEN7njOdak3WsLKHqi3n7Hmu/KoPy9rcY39JaGTVhAIrbgoDiqPNro8iQp7XusT9Suw6EC4vVUY22kGtVz97xFew592sbzBO2uQyt+dqc6STdRl/1958cuT36H2cmtrUqIkUF7SXtNnxEfI7RPW8DqC4X4ltrDqkiXHqZVdqbnONesphHw1/1sNn1ix3Dr/MdBrVBUf2M31mfo/ex6mh2VUTI3G1l7TZ8SEXIrNGwj4qthc3u1wwTq2vUnOba9RTDnvuwXp8x+e0qeTwk3+lE3FqvF371OfIb/TOPWeX5F3D796ceV7rEvcrsbk8bFbDf2RTL9pco56M47vR8Geco9zGcPjT371kXbv2mf/I79H7ODWKwVLwSoo1EiEvYMfHPcKx8rzWlTajOqHa+As2osY2Fs9RvZ47lHVocpC1UQfjGAOOcucXStvUQIy3a2+N5Kkc+dW606b2dwlq8XWlKOCF8PRCXezzAmDXJxf2+q5WCj6LV4e1kvbYoUnW6lnd45vv2GdM+iBmMsudfWOXti519ZwnrOxHulrfvX658j7+eRAM8RTuvxPgjbT2bwbhEd1fweZ1tPZvRuH5Wxz9vTefR2vfNE3TNE3TNE3TNNfj4+MXqA13YdbH790AAAAASUVORK5CYII=' , 'fill:url(#Text_rancangan_pembelajaran__shape26550)')
+shape26550.setUseSvgFile(1)
+shape26550.addBorder(0)
+shape26550.initLineWeight(1)
+shape26550.addOpacity(100)
+shape26550.build()
+
+shape27603 = new ObjImage('shape27603','images/shape27603.png','Elemen CP yang dituju ',24,436,191.000000,29.000000,1,16,'div','',0 )
+shape27603.initRotateAngle(0,0,0,-1.000000,-1.000000,189,27)
+shape27603.initHasShadow(0)
+shape27603.initHasReflection(0)
+shape27603.setUniqueFillID('rancangan_pembelajaran__shape27603')
+shape27603.addIe8Attr(24.000000, 436.000000, 191.000000, 29.000000, 0, 0)
+shape27603.initImageMap(1,'1,1,190,1,190,28,1,28,1,1','M 1.000000 1.000000 L 190.000000 1.000000 L 190.000000 28.000000 L 1.000000 28.000000 L 1.000000 1.000000 z', '', 'stroke:#D5A6BD; stroke-width:1; stroke-linejoin:round;stroke-dasharray: none; fill:#D5A6BD;"' , '')
+shape27603.setTextVal('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAL8AAAAdCAYAAAD7Pr3jAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAN5SURBVHhe7ZaLbdxADAXdT1pJKSkkhaTP5CbAAA8PK2kdx1HO5gCEtLsklz+d/TIMwzAMwzAMwzAMwzAMwzAMwzAMn4WfG/L1IcDzx0O+/V49L8RPHpkj6+8P+fIQzvOsBb1nJnMU12/trX6cmf8eArWxHTSNdujVeWuB7oKmm0cPcDdtpZt1euYamAMi5srzLRzV97/GYvTw+ysBJITOszb+qjGcZ/7mm/ruvXVI7iQ/APHjz97y3vNwhX5ea3cbWYxufmLjnyaxwKYg5LsCnWz+avj189GGv6HHZ7X6MKyGn+fO8GPrLyrCuwXjybD4i5p6nOlPu2TXr8OI5OA2+up7zlgN/2pPMhZ1cs+66aP3YTe39qEc0fVufc875tRLHbGvnEHr7NjcCkF0skgGDKzZt1naqcc+axLzXbF5+kBMvnXO/HZjjMX1UUE975zOMNaO4+yejFWwN06eNt48EdjNTT2e7WPF2T1APK7N1dyNwTXS9yLQOjs2t5NBmSx7FkLOCpJi49Mv72Dh07fF5wyu/HK/e+LaexrP9bHDKg7sj+4QddXLO8nR+oG6spOb9dKP66O4zMP6oqdPaR3XGeuOH85Wfs5sbiUD6mSTLsjKJkm/vEMXB7pA2uz4Fdfe0zggOYhXaNN1uCJzJIeVPfv6R2Qnt64h72d5eY/1XN3RPeheQ98L7ad1dmxuJYtxNHDQBdEmE0vS71HjoAuvzY5fce09jXec6TR/OvzGhz22eR/v7CPqIbLac51+Mh99HaFeDz920j1w/emH3+Z3QSgea8+b9GtzVsXQj3tXfrlfv+L6aAgyliO/zVUcZ2jLMzEG43QtO7lRp/Z7hrFYX2uRPuytOq4//PAbINLDz9rmdxFXdqnPe59bVHVAv+5d+c1zGpmDrf6KjAdfDhPwThzap0/2U3cH77JWok/85R2yk5vrlr5L0ie4zuHvHvDUp361UyfrKeq8xuY2DORMSMDi5B6YnOJQZZJ5lmtse88iHfnt/ZU4JCvw0XeSm/nA0R3Gtgs2zZFvYugar4TczmpwhL7NNW36XvK0f5xlPdNP9zhj4ylXNsMHw4/sPcBvDhf4Qd8F8eSP0wz1J8O/eMAwsv7brH5Z/TXtD+Jfwt3EcfdHONyIf+Lf85fPAVP8d+JOjIlY3uOjH4ZhGIZhGIZhGIbPxsvLLxJ5jXAx+5gQAAAAAElFTkSuQmCC' , 'fill:url(#Text_rancangan_pembelajaran__shape27603)')
+shape27603.setUseSvgFile(1)
+shape27603.addBorder(0)
+shape27603.initLineWeight(1)
+shape27603.addOpacity(100)
+shape27603.build()
+
+shape26358 = new ObjImage('shape26358','images/shape26358.png','STRUKTUR ATOM',70,144,313.000000,33.000000,1,17,'div','',0 )
+shape26358.initRotateAngle(0,0,0,-1.000000,-1.000000,311,31)
+shape26358.initHasShadow(0)
+shape26358.initHasReflection(0)
+shape26358.setUniqueFillID('rancangan_pembelajaran__shape26358')
+shape26358.addIe8Attr(70.000000, 144.000000, 313.000000, 33.000000, 0, 0)
+shape26358.initImageMap(1,'8,1,305,1,308,2,310,3,311,5,312,8,312,25,311,28,310,30,308,31,305,32,8,32,5,32,3,30,2,28,1,25,1,8,2,5,3,3,5,2,8,1','M 8.000000 1.000000 L 305.000000 1.000000 L 307.750000 1.562500 L 309.937500 3.062500 L 311.437500 5.312500 L 312.000000 8.000000 L 312.000000 25.000000 L 311.437500 27.750000 L 309.937500 29.937500 L 307.750000 31.437500 L 305.000000 32.000000 L 8.000000 32.000000 L 5.375000 31.500000 L 3.062500 30.000000 L 1.562500 27.687500 L 1.000000 25.000000 L 1.000000 8.000000 L 1.562500 5.312500 L 3.062500 3.062500 L 5.312500 1.562500 L 8.000000 1.000000 z', '', 'stroke:#A2C4C9; stroke-width:1; stroke-linejoin:round;stroke-dasharray: none; fill:#A2C4C9;"' , '')
+shape26358.setTextVal('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATkAAAAhCAYAAACiE9yzAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOQSURBVHhe7ZbhbTQ3DAXdT1pJKSkkhaTPxPPjAQ+EtKtb5/M5wQxA3IoiKVIWCX+IiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIj8d/ntU/78lL9L/vqU3z8FWr8T7P8Yuimc0ezscy6/c2/ng35lT20w9Su5quFJTpFZ9ynkc+W7OmsKMSbUgH7apcbQ+8hVLvP9cCciP4Y8zDxyBkMear5DN3kGSJompIHSFInRutB7+CVmYI2+41/FS37dZLEPdzV0/NOcgDU+J3Xf0b4rsh9O/i6QHOf9RD/tOw9kxbThXJEfQ/4LmY8bfYZcN+iqmaD9sWe//aJDJmmw3SBAP/d2Pui7geFJDU9yYj19okNeof1mPfAraor/3I8fshpgeUORPl/k7XQznTzOXTM1idnNkkbopgt3zYfvrvFaz/cuRnNSw5OcWE+fq7qvwD7xTnzvajqpuYdV29zlgg65iy/yFvphI6yveDrkolvFT4O0fYPP3Js+2KwacMV3Drno7u61wZYcO0++r7irKXkgO3bncRe7+Hzn7lf7Ij+CfqCRXVPdNRPMZo9PN3/zZKC0D/t8n3JSw5OcWLfPXd078AnJg98r7mo6iYNfYlBfwIe9xOg9aus9ZHenIm+lmyTSjzmcDIg0+5SdfRpkNwxWAyU+3Vx8n/Crh9yUV5qe3Dou55zE+Y4hl1w6Rr4TH3mlXpFvp5tq1RCvDDl+u3FW8SANModGIKduOmifznkXo/m3htzMCdv4nNS9Iueu5Kq2u5qSG7JjF6PX2ceW+vmFznt3pyJvIY+16aExuWsm6GaHbrA0RXM3UNDPHKdP57yLE05qeJITuvbJGlnVPUlek46zy/eupr6fXYzYUHvTPl1j2+W+ruKLvAWaYz7q3WOHkwHRjQDYxQeZxH51HqCfQyJNlTMgcZA5gJpXanglp/gkp7u6J/it8u44u7pOasp+8pvkTmddHbPP6Vzi27YiP4IMtDzsbqj52CH2u3388+D5zYPPAED47kboM2cDsp66PmPG6mbbDYS7GuArOZ3W3WR47PJJjJ3NV2pCnzznncWnYyZGauG37313vshb4EH2A0W6SUMe+xRsQzdaC2es/LsZ2O+BgBB7Nt3uDPSzjkhqOamh+WpOJ3XDPKPjY9t70+ZpTfOu0LHXrGqH3DXsau8aRERERERERERERERERERERERERERERERE5H/Ax8c/c6uU+xrCyucAAAAASUVORK5CYII=' , 'fill:url(#Text_rancangan_pembelajaran__shape26358)')
+shape26358.setUseSvgFile(1)
+shape26358.addBorder(0)
+shape26358.initLineWeight(1)
+shape26358.addOpacity(100)
+shape26358.build()
+
+text27417 = new ObjText('text27417',null,97,332,355,37,1,18,null,'div',null,0 )
+text27417.initSLine(0)
+text27417.initHasBullet(0)
+text27417.initRotateAngle(0,0,0)
+text27417.initHasOuterShadow(0)
+text27417.initHasTextShadow(0)
+text27417.initHasBorder(0)
+text27417.initHasOutline(0)
+text27417.initHasMargin(0)
+text27417.addIe8Attr(97, 332, 355, 37, 0, 0)
+text27417.addOpacity(100)
+text27417.arrCSSStyles = new Array();
+text27417.arrCSSStyles.push('span.text27417Font1 { font-size:16px; font-family:"Times New Roman", serif; color:#010101;}');
+text27417.arrCSSStyles.push('span.text27417Font2 { font-size:15px; font-family:"Arial", sans-serif; color:#010101;}');
+text27417.addInnerText('<div id=\"text27417\"><a id=\"text27417anc\" style=\"display:block;height:0px;width:0px;\"></a>\n<p  legLH=\"1.127\" style=\"margin-left:0px;text-indent:0px;line-height:0.980;margin-top:0px;margin-bottom:0px;text-align:justify;\" >\n<span class=\"text27417Font1\"  >Menjelaskan perkembangan teori atom mulai dari Dalton, Thomson, Rutherford, Bohr dan mekanika kuantum </span ><span class=\"text27417Font2\" style=\"background-color:transparent\" >\n</span ></p >\n</div>\n');
+text27417.build()
+
+text27548 = new ObjText('text27548',null,97,376,355,55,1,19,null,'div',null,0 )
+text27548.initSLine(0)
+text27548.initHasBullet(0)
+text27548.initRotateAngle(0,0,0)
+text27548.initHasOuterShadow(0)
+text27548.initHasTextShadow(0)
+text27548.initHasBorder(0)
+text27548.initHasOutline(0)
+text27548.initHasMargin(0)
+text27548.addIe8Attr(97, 376, 355, 55, 0, 0)
+text27548.addOpacity(100)
+text27548.arrCSSStyles = new Array();
+text27548.arrCSSStyles.push('span.text27548Font1 { font-size:16px; font-family:"Times New Roman", serif; color:#010101;}');
+text27548.arrCSSStyles.push('span.text27548Font2 { font-size:15px; font-family:"Arial", sans-serif; color:#010101;}');
+text27548.addInnerText('<div id=\"text27548\"><a id=\"text27548anc\" style=\"display:block;height:0px;width:0px;\"></a>\n<p  legLH=\"1.127\" style=\"margin-left:0px;text-indent:0px;line-height:0.980;margin-top:0px;margin-bottom:0px;text-align:justify;\" >\n<span class=\"text27548Font1\"  >Menganalisis dan menyimpulkan bahwa nomor atom, nomor massa dan isotop berkaitan dengan partikel dasar penyusun atom. </span ><span class=\"text27548Font2\" style=\"background-color:transparent\" >\n</span ></p >\n</div>\n');
+text27548.build()
+
+text27907 = new ObjText('text27907',null,25,617,429,93,1,20,null,'div',null,0 )
+text27907.initSLine(0)
+text27907.initHasBullet(0)
+text27907.initRotateAngle(0,0,0)
+text27907.initHasOuterShadow(0)
+text27907.initHasTextShadow(0)
+text27907.initHasBorder(0)
+text27907.initHasOutline(0)
+text27907.initHasMargin(0)
+text27907.addIe8Attr(25, 617, 429, 93, 0, 0)
+text27907.addOpacity(100)
+text27907.arrCSSStyles = new Array();
+text27907.arrCSSStyles.push('span.text27907Font1 { font-size:16px; font-family:"Times New Roman", serif; color:#009e0f;}');
+text27907.arrCSSStyles.push('span.text27907Font2 { font-size:16px; font-family:"Times New Roman", serif; color:#000000;}');
+text27907.arrCSSStyles.push('span.text27907Font3 { font-size:15px; font-family:"Arial", sans-serif; color:#010101;}');
+text27907.addInnerText('<div id=\"text27907\"><a id=\"text27907anc\" style=\"display:block;height:0px;width:0px;\"></a>\n<p  legLH=\"1.127\" style=\"margin-left:0px;text-indent:0px;line-height:0.980;margin-top:0px;margin-bottom:0px;text-align:justify;\" >\n<span class=\"text27907Font1\"  >Apakah pengetahuan latar yang perlu dimiliki siswa sebelum mempelajari topik ini ?\n</span ></p >\n<p  legLH=\"1.127\" style=\"margin-left:0px;text-indent:0px;line-height:0.980;margin-top:0px;margin-bottom:0px;text-align:justify;\" >\n<span class=\"text27907Font2\" style=\"background-color:transparent\" >\n&nbsp;</span ></p >\n<p  legLH=\"1.127\" style=\"margin-left:0px;text-indent:0px;line-height:0.980;margin-top:0px;margin-bottom:0px;text-align:justify;\" >\n<span class=\"text27907Font2\"  >Siswa sudah mengenal tentang teori atom, partikel penyusun atom dan penulisan notasi atom</span ><span class=\"text27907Font3\" style=\"background-color:transparent\" >\n</span ></p >\n</div>\n');
+text27907.build()
 
 text27758 = new ObjText('text27758',null,26,470,187,37,1,21,null,'div',null,0 )
 text27758.initSLine(0)
@@ -739,6 +739,7 @@ arObjs.push(image98);
 arObjs.push(image307);
 arObjs.push(image324);
 arObjs.push(image290);
+arObjs.push(text27787);
 arObjs.push(text60818);
 arObjs.push(shape26728);
 arObjs.push(shape27484);
@@ -748,7 +749,6 @@ arObjs.push(shape26358);
 arObjs.push(text27417);
 arObjs.push(text27548);
 arObjs.push(text27907);
-arObjs.push(text27787);
 arObjs.push(text27758);
 arObjs.push(text26444);
 
@@ -788,6 +788,7 @@ if( is.min ){
     appendElement(image307, null, null);
     appendElement(image324, null, null);
     appendElement(image290, null, null);
+    appendElement(text27787, null, null);
     appendElement(text60818, null, null);
     appendElement(shape26728, null, null);
     appendElement(shape27484, null, null);
@@ -797,7 +798,6 @@ if( is.min ){
     appendElement(text27417, null, null);
     appendElement(text27548, null, null);
     appendElement(text27907, null, null);
-    appendElement(text27787, null, null);
     appendElement(text27758, null, null);
     appendElement(text26444, null, null);
 }
